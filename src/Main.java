@@ -30,6 +30,5 @@ public class Main {
         System.out.println(numbers);
         numbers.removeIf(number ->number % 2 == 1);
         System.out.println(numbers);
-
     }
 }

@@ -18,10 +18,10 @@ public class ProductList{
         System.out.println("Продукт "+product.getName() +" куплен");
         remove(product);
     }
-    public Integer getSum(ProductList productList){
+    public int getSum(ProductList productList){
         int sum=0;
         for (Product product: products) {
-            sum+=product.getPriсe();
+            sum+=product.getPrice();
         }
         return sum;
     }

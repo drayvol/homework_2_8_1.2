@@ -4,16 +4,16 @@ import java.util.Objects;
 import Validate.*;
 public class Product {
     private final String name;
-    private final Integer priсe;
+    private final Integer price;
     private  Integer amount;
-    public Product(String name,Integer priсe, Integer amount){
+    public Product(String name,Integer price, Integer amount){
         this.name = Validate.validateString(name);
-        this.priсe = Validate.validateInteger(priсe);
+        this.price = Validate.validateInteger(price);
         this.amount = Validate.validateInteger(amount);
     }
 
-    public Integer getPriсe() {
-        return priсe;
+    public Integer getPrice() {
+        return price;
     }
 
     public Integer getAmount() {
@@ -33,7 +33,7 @@ public class Product {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Product product = (Product) o;
-        return name == product.name && Objects.equals(name, product.name) && Objects.equals(priсe, product.priсe) && Objects.equals(amount, product.amount) ;
+        return  Objects.equals(name, product.name);
     }
 
     @Override
@@ -45,7 +45,7 @@ public class Product {
     public String toString() {
         return "ProductsAndRecipes.Product{" +
                 "name='" + name + '\'' +
-                ", priсe=" + priсe +
+                ", priсe=" + price +
                 ", amount=" + amount +
                 '}';
     }

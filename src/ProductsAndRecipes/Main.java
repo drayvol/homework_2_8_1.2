@@ -1,11 +1,11 @@
+package ProductsAndRecipes;
+
 import ProductsAndRecipes.Product;
 import ProductsAndRecipes.ProductList;
 import ProductsAndRecipes.Recipe;
 import ProductsAndRecipes.RecipesList;
 
-import java.util.HashSet;
-import java.util.Set;
-import java.util.Random;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -30,5 +30,6 @@ public class Main {
         System.out.println(numbers);
         numbers.removeIf(number ->number % 2 == 1);
         System.out.println(numbers);
+            
+        }
     }
-}
